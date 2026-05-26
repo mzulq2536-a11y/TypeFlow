@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ============================================ -->
+    <!-- SEO META TAGS -->
+    <!-- ============================================ -->
+    
+    <!-- Primary Meta Tags -->
+    <title>TypeFlow - Free Online Typing Speed Test | Improve Your WPM</title>
+    <meta name="title" content="TypeFlow - Free Online Typing Speed Test | Improve WPM">
+    <meta name="description" content="Test your typing speed online for free with TypeFlow. Practice with timed tests (30s, 1min, 5min), 100 words challenge, and fun typing games. Track your WPM, accuracy, and progress over time.">
+    <meta name="keywords" content="typing test, typing speed test, WPM test, typing practice, typing games, speed typing, online typing test, free typing test, keyboard practice, typing skills, words per minute, TypeFlow, type flow, typing speed checker">
+    <meta name="author" content="TypeFlow">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="rating" content="general">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://typeflow.app/">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://typeflow.app/">
+    <meta property="og:title" content="TypeFlow - Free Online Typing Speed Test">
+    <meta property="og:description" content="Test your typing speed online for free. Practice with timed tests, 100 words challenge, and fun typing games. Track your WPM and accuracy.">
+    <meta property="og:image" content="https://typeflow.app/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="TypeFlow Typing Speed Test">
+    <meta property="og:site_name" content="TypeFlow">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://typeflow.app/">
+    <meta name="twitter:title" content="TypeFlow - Free Online Typing Speed Test">
+    <meta name="twitter:description" content="Test your typing speed online for free. Practice with timed tests, 100 words challenge, and fun typing games. Track your WPM and accuracy.">
+    <meta name="twitter:image" content="https://typeflow.app/assets/og-image.png">
+    <meta name="twitter:image:alt" content="TypeFlow Typing Speed Test">
+    <meta name="twitter:creator" content="@TypeFlow">
+
+    <!-- Structured Data / Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "TypeFlow",
+      "description": "Free online typing speed test and practice tool. Improve your WPM with timed tests, challenges, and typing games.",
+      "url": "https://typeflow.app",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "browserRequirements": "Requires JavaScript",
+      "featureList": [
+        "Typing Speed Test",
+        "WPM Calculator",
+        "Accuracy Tracking",
+        "Typing Games",
+        "100 Words Challenge",
+        "Progress History",
+        "User Profiles",
+        "Dark Mode",
+        "Virtual Keyboard"
+      ],
+      "author": {
+        "@type": "Organization",
+        "name": "TypeFlow"
+      }
+    }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://typeflow.app/"
+      }, {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Typing Test",
+        "item": "https://typeflow.app/typing-test"
+      }]
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What is a good typing speed?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An average typing speed is around 40 WPM. A good typing speed is 60-80 WPM, while professional typists can reach 100+ WPM."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How can I improve my typing speed?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Practice regularly with typing tests, focus on accuracy first, use proper finger placement, and try typing games to make learning fun."
+        }
+      }]
+    }
+    </script>
+
+    <!-- Mobile Web App -->
+    <meta name="theme-color" content="#6c5ce7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="TypeFlow">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" href="/assets/logo.svg">
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+
+    <!-- Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js" defer></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Skip to main content (Accessibility) -->
+    <a href="#mainContent" class="skip-link">Skip to main content</a>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Sound Toggle -->
+    <button class="sound-toggle" id="soundToggle" aria-label="Toggle sound on/off">
+        <i class="fas fa-volume-up"></i>
+    </button>
+
+    <!-- Main Container -->
+    <div class="app-container">
+        
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar" id="sidebar" aria-label="Main navigation">
+            <div class="logo-container">
+                <img src="assets/logo.svg" alt="TypeFlow Logo - Keyboard with lightning bolt" class="logo-img" width="40" height="40">
+                <span class="logo-text">TypeFlow</span>
+            </div>
+            
+            <ul class="nav-links" role="menubar">
+                <li class="nav-item active" data-page="home" role="menuitem" tabindex="0" aria-current="page">
+                    <i class="fas fa-keyboard" aria-hidden="true"></i>
+                    <span>Typing Test</span>
+                </li>
+                <li class="nav-item" data-page="hundred-words" role="menuitem" tabindex="0">
+                    <i class="fas fa-file-alt" aria-hidden="true"></i>
+                    <span>100 Words</span>
+                </li>
+                <li class="nav-item" data-page="games" role="menuitem" tabindex="0">
+                    <i class="fas fa-gamepad" aria-hidden="true"></i>
+                    <span>Games Hub</span>
+                </li>
+                <li class="nav-item" data-page="profile" role="menuitem" tabindex="0">
+                    <i class="fas fa-user" aria-hidden="true"></i>
+                    <span>Profile</span>
+                </li>
+                <li class="nav-item" data-page="settings" role="menuitem" tabindex="0">
+                    <i class="fas fa-cog" aria-hidden="true"></i>
+                    <span>Settings</span>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <button class="btn-auth" id="btnAuth" aria-label="Login or Sign Up">
+                    <i class="fas fa-sign-in-alt" aria-hidden="true"></i>
+                    <span>Login / Sign Up</span>
+                </button>
+                <div class="user-info hidden" id="userInfo">
+                    <img src="" alt="User Avatar" class="user-avatar" id="userAvatar" width="36" height="36" loading="lazy">
+                    <span class="user-name" id="userName">User</span>
+                    <button class="btn-logout" id="btnLogout" title="Logout" aria-label="Logout">
+                        <i class="fas fa-sign-out-alt" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Header -->
+        <header class="mobile-header">
+            <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+            <span class="mobile-logo">TypeFlow</span>
+            <div class="mobile-actions">
+                <button class="btn-auth-mobile" id="btnAuthMobile" aria-label="Login">
+                    <i class="fas fa-user-circle" aria-hidden="true"></i>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="main-content" id="mainContent">
+            
+            <!-- ========== HOME PAGE - TYPING TEST ========== -->
+            <section class="page active" id="page-home" aria-labelledby="home-heading">
+                <div class="page-header">
+                    <h1 id="home-heading">Typing Speed Test</h1>
+                    <p>Test your typing speed and improve your skills with our free online WPM test</p>
+                </div>
+
+                <!-- Difficulty & Timer Selection -->
+                <div class="test-options">
+                    <div class="option-group">
+                        <label id="difficulty-label">Difficulty</label>
+                        <div class="option-buttons" id="difficultyOptions" role="radiogroup" aria-labelledby="difficulty-label">
+                            <button class="option-btn active" data-difficulty="easy" role="radio" aria-checked="true">
+                                <i class="fas fa-feather" aria-hidden="true"></i> Easy
+                            </button>
+                            <button class="option-btn" data-difficulty="medium" role="radio" aria-checked="false">
+                                <i class="fas fa-grip-lines" aria-hidden="true"></i> Medium
+                            </button>
+                            <button class="option-btn" data-difficulty="hard" role="radio" aria-checked="false">
+                                <i class="fas fa-fire" aria-hidden="true"></i> Hard
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="option-group">
+                        <label id="timer-label">Timer</label>
+                        <div class="option-buttons" id="timerOptions" role="radiogroup" aria-labelledby="timer-label">
+                            <button class="option-btn" data-time="30" role="radio" aria-checked="false">30s</button>
+                            <button class="option-btn active" data-time="60" role="radio" aria-checked="true">1 min</button>
+                            <button class="option-btn" data-time="300" role="radio" aria-checked="false">5 min</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Stats -->
+                <div class="live-stats" aria-live="polite">
+                    <div class="stat-card">
+                        <span class="stat-value" id="liveWPM">0</span>
+                        <span class="stat-label">WPM</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-value" id="liveAccuracy">100%</span>
+                        <span class="stat-label">Accuracy</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-value" id="liveTimer">60</span>
+                        <span class="stat-label">Seconds</span>
+                    </div>
+                </div>
+
+                <!-- Typing Area -->
+                <div class="typing-area-container">
+                    <div class="paragraph-display" id="paragraphDisplay" aria-label="Text to type" role="textbox" aria-readonly="true"></div>
+                    <textarea 
+                        class="typing-input" 
+                        id="typingInput" 
+                        placeholder="Click here and start typing..."
+                        disabled
+                        aria-label="Type here"
+                        autocomplete="off"
+                        autocorrect="off"
+                        autocapitalize="off"
+                        spellcheck="false"
+                    ></textarea>
+                    <button class="btn-start" id="btnStart">
+                        <i class="fas fa-play" aria-hidden="true"></i> Start Test
+                    </button>
+                    <button class="btn-restart hidden" id="btnRestart">
+                        <i class="fas fa-redo" aria-hidden="true"></i> Restart
+                    </button>
+                </div>
+
+                <!-- Virtual Keyboard (Easy Mode Only) -->
+                <div class="virtual-keyboard hidden" id="virtualKeyboard" aria-label="Virtual keyboard" role="region"></div>
+
+                <!-- Results Modal -->
+                <div class="modal-overlay hidden" id="resultsModal" role="dialog" aria-modal="true" aria-labelledby="results-heading">
+                    <div class="modal-content results-modal">
+                        <div class="results-header">
+                            <i class="fas fa-trophy" aria-hidden="true"></i>
+                            <h2 id="results-heading">Test Complete!</h2>
+                        </div>
+                        <div class="results-grid">
+                            <div class="result-item">
+                                <span class="result-value" id="resultWPM">0</span>
+                                <span class="result-label">WPM</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-value" id="resultAccuracy">100%</span>
+                                <span class="result-label">Accuracy</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-value" id="resultChars">0</span>
+                                <span class="result-label">Characters</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-value" id="resultErrors">0</span>
+                                <span class="result-label">Errors</span>
+                            </div>
+                        </div>
+                        <div class="results-actions">
+                            <button class="btn btn-primary" id="btnRetry">
+                                <i class="fas fa-redo" aria-hidden="true"></i> Try Again
+                            </button>
+                            <button class="btn btn-secondary" id="btnNextTest">
+                                <i class="fas fa-arrow-right" aria-hidden="true"></i> Next Test
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========== 100 WORDS PAGE ========== -->
+            <section class="page" id="page-hundred-words" aria-labelledby="hw-heading">
+                <div class="page-header">
+                    <h1 id="hw-heading">100 Words Challenge</h1>
+                    <p>Type 100 words as fast as you can and beat your best time!</p>
+                </div>
+
+                <div class="hundred-words-container">
+                    <div class="hundred-stats" aria-live="polite">
+                        <div class="stat-card">
+                            <span class="stat-value" id="hwWordsLeft">100</span>
+                            <span class="stat-label">Words Left</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-value" id="hwTimer">00:00</span>
+                            <span class="stat-label">Time</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-value" id="hwAccuracy">100%</span>
+                            <span class="stat-label">Accuracy</span>
+                        </div>
+                    </div>
+                    
+                    <div class="paragraph-display" id="hwParagraphDisplay" aria-label="100 words paragraph"></div>
+                    <textarea 
+                        class="typing-input" 
+                        id="hwTypingInput" 
+                        placeholder="Start typing the paragraph above..."
+                        disabled
+                        aria-label="Type the 100 words"
+                        autocomplete="off"
+                        autocorrect="off"
+                        autocapitalize="off"
+                        spellcheck="false"
+                    ></textarea>
+                    <button class="btn-start" id="btnHWStart">
+                        <i class="fas fa-play" aria-hidden="true"></i> Start Challenge
+                    </button>
+
+                    <div class="hw-results hidden" id="hwResults">
+                        <h3>Challenge Complete!</h3>
+                        <div class="hw-result-grid">
+                            <div class="result-item">
+                                <span class="result-value" id="hwResultWPM">0</span>
+                                <span class="result-label">WPM</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-value" id="hwResultTime">00:00</span>
+                                <span class="result-label">Time</span>
+                            </div>
+                            <div class="result-item">
+                                <span class="result-value" id="hwResultAccuracy">100%</span>
+                                <span class="result-label">Accuracy</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" id="btnHWRetry">
+                            <i class="fas fa-redo" aria-hidden="true"></i> Try Again
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========== GAMES HUB PAGE ========== -->
+            <section class="page" id="page-games" aria-labelledby="games-heading">
+                <div class="page-header">
+                    <h1 id="games-heading">Games Hub</h1>
+                    <p>Fun typing games to boost your speed while having fun</p>
+                </div>
+
+                <div class="games-grid">
+                    <article class="game-card" id="game-scramble">
+                        <div class="game-icon">
+                            <i class="fas fa-random" aria-hidden="true"></i>
+                        </div>
+                        <h3>Word Scramble</h3>
+                        <p>Unscramble the letters to form correct words against the clock</p>
+                        <button class="btn btn-game" data-game="scramble" aria-label="Play Word Scramble">
+                            <i class="fas fa-play" aria-hidden="true"></i> Play
+                        </button>
+                    </article>
+
+                    <article class="game-card" id="game-falling">
+                        <div class="game-icon">
+                            <i class="fas fa-arrow-down" aria-hidden="true"></i>
+                        </div>
+                        <h3>Falling Words</h3>
+                        <p>Type words before they hit the ground in this fast-paced game</p>
+                        <button class="btn btn-game" data-game="falling" aria-label="Play Falling Words">
+                            <i class="fas fa-play" aria-hidden="true"></i> Play
+                        </button>
+                    </article>
+
+                    <article class="game-card" id="game-race">
+                        <div class="game-icon">
+                            <i class="fas fa-flag-checkered" aria-hidden="true"></i>
+                        </div>
+                        <h3>Speed Race</h3>
+                        <p>Race against time typing as many words as possible</p>
+                        <button class="btn btn-game" data-game="race" aria-label="Play Speed Race">
+                            <i class="fas fa-play" aria-hidden="true"></i> Play
+                        </button>
+                    </article>
+                </div>
+
+                <div class="game-play-area hidden" id="gamePlayArea">
+                    <button class="btn-back-game" id="btnBackGames">
+                        <i class="fas fa-arrow-left" aria-hidden="true"></i> Back to Games
+                    </button>
+                    <div id="gameContent"></div>
+                </div>
+            </section>
+
+            <!-- ========== PROFILE PAGE ========== -->
+            <section class="page" id="page-profile" aria-labelledby="profile-heading">
+                <div class="page-header">
+                    <h1 id="profile-heading">Your Profile</h1>
+                    <p>Track your typing progress and view detailed statistics</p>
+                </div>
+
+                <div class="profile-container">
+                    <div class="profile-header-card">
+                        <div class="profile-avatar-container">
+                            <img src="" alt="Profile Avatar" class="profile-avatar" id="profileAvatar" width="90" height="90" loading="lazy">
+                            <button class="btn-change-avatar" id="btnChangeAvatar" aria-label="Change profile photo">
+                                <i class="fas fa-camera" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div class="profile-info">
+                            <h2 id="profileName">User Name</h2>
+                            <p id="profileEmail">user@email.com</p>
+                        </div>
+                    </div>
+
+                    <div class="profile-stats-grid">
+                        <div class="profile-stat-card">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                            <span class="profile-stat-value" id="profileTotalTests">0</span>
+                            <span class="profile-stat-label">Total Tests</span>
+                        </div>
+                        <div class="profile-stat-card">
+                            <i class="fas fa-tachometer-alt" aria-hidden="true"></i>
+                            <span class="profile-stat-value" id="profileAvgWPM">0</span>
+                            <span class="profile-stat-label">Average WPM</span>
+                        </div>
+                        <div class="profile-stat-card">
+                            <i class="fas fa-trophy" aria-hidden="true"></i>
+                            <span class="profile-stat-value" id="profileBestWPM">0</span>
+                            <span class="profile-stat-label">Best WPM</span>
+                        </div>
+                        <div class="profile-stat-card">
+                            <i class="fas fa-bullseye" aria-hidden="true"></i>
+                            <span class="profile-stat-value" id="profileAvgAccuracy">0%</span>
+                            <span class="profile-stat-label">Avg Accuracy</span>
+                        </div>
+                    </div>
+
+                    <div class="chart-container">
+                        <h3>WPM Progress (Last 30 Days)</h3>
+                        <canvas id="wpmChart" aria-label="WPM progress chart for the last 30 days" role="img"></canvas>
+                    </div>
+
+                    <div class="history-container">
+                        <h3>Recent Tests</h3>
+                        <div class="history-list" id="historyList">
+                            <p class="no-data">No tests completed yet. Start typing to see your history!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ========== SETTINGS PAGE ========== -->
+            <section class="page" id="page-settings" aria-labelledby="settings-heading">
+                <div class="page-header">
+                    <h1 id="settings-heading">Settings</h1>
+                    <p>Customize your TypeFlow experience</p>
+                </div>
+
+                <div class="settings-container">
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3><i class="fas fa-moon" aria-hidden="true"></i> Dark Mode</h3>
+                            <p>Toggle dark/light theme for comfortable typing</p>
+                        </div>
+                        <label class="toggle-switch" aria-label="Toggle dark mode">
+                            <input type="checkbox" id="settingDarkMode">
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3><i class="fas fa-volume-up" aria-hidden="true"></i> Error Sound</h3>
+                            <p>Play a buzz sound when you make a mistake</p>
+                        </div>
+                        <label class="toggle-switch" aria-label="Toggle error sound">
+                            <input type="checkbox" id="settingSound" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3><i class="fas fa-font" aria-hidden="true"></i> Font Size</h3>
+                            <p>Adjust typing area font size</p>
+                        </div>
+                        <select id="settingFontSize" class="setting-select" aria-label="Select font size">
+                            <option value="small">Small</option>
+                            <option value="medium" selected>Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <h3><i class="fas fa-keyboard" aria-hidden="true"></i> Virtual Keyboard</h3>
+                            <p>Show on-screen keyboard in Easy mode</p>
+                        </div>
+                        <label class="toggle-switch" aria-label="Toggle virtual keyboard">
+                            <input type="checkbox" id="settingKeyboard" checked>
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Auth Modal -->
+    <div class="modal-overlay hidden" id="authModal" role="dialog" aria-modal="true" aria-labelledby="auth-heading">
+        <div class="modal-content auth-modal">
+            <button class="modal-close" id="authModalClose" aria-label="Close">
+                <i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+            
+            <!-- Login Form -->
+            <div class="auth-form" id="loginForm">
+                <h2 id="auth-heading">Welcome Back</h2>
+                <p>Login to your account to track progress</p>
+                <div class="input-group">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                    <input type="email" id="loginEmail" placeholder="Email address" required aria-label="Email address" autocomplete="email">
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock" aria-hidden="true"></i>
+                    <input type="password" id="loginPassword" placeholder="Password" required aria-label="Password" autocomplete="current-password">
+                </div>
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox" id="rememberMe"> Remember me
+                    </label>
+                    <a href="#" class="forgot-password" aria-label="Forgot password">Forgot password?</a>
+                </div>
+                <button class="btn btn-primary btn-full" id="btnLogin">
+                    <i class="fas fa-sign-in-alt" aria-hidden="true"></i> Login
+                </button>
+                <button class="btn btn-google btn-full" id="btnGoogleLogin">
+                    <i class="fab fa-google" aria-hidden="true"></i> Continue with Google
+                </button>
+                <p class="auth-switch">
+                    Don't have an account? <a href="#" id="showSignup" aria-label="Sign up">Sign Up</a>
+                </p>
+            </div>
+
+            <!-- Signup Form -->
+            <div class="auth-form hidden" id="signupForm">
+                <h2>Create Account</h2>
+                <p>Start your typing journey today</p>
+                <div class="input-group">
+                    <i class="fas fa-user" aria-hidden="true"></i>
+                    <input type="text" id="signupName" placeholder="Full name" required aria-label="Full name" autocomplete="name">
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                    <input type="email" id="signupEmail" placeholder="Email address" required aria-label="Email address" autocomplete="email">
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock" aria-hidden="true"></i>
+                    <input type="password" id="signupPassword" placeholder="Password (min 6 characters)" required aria-label="Password" autocomplete="new-password" minlength="6">
+                </div>
+                <button class="btn btn-primary btn-full" id="btnSignup">
+                    <i class="fas fa-user-plus" aria-hidden="true"></i> Sign Up
+                </button>
+                <button class="btn btn-google btn-full" id="btnGoogleSignup">
+                    <i class="fab fa-google" aria-hidden="true"></i> Continue with Google
+                </button>
+                <p class="auth-switch">
+                    Already have an account? <a href="#" id="showLogin" aria-label="Login">Login</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confetti Canvas -->
+    <canvas class="confetti-canvas hidden" id="confettiCanvas" aria-hidden="true"></canvas>
+
+    <!-- Firebase SDK -->
+    <script type="module">
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js';
+        import { getAuth } from 'https://www.gstatic.com/firebasejs/10.7.0/firebase-auth.js';
+        import { getFirestore } from 'https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js';
+        
+        const firebaseConfig = {
+            apiKey: "YOUR_API_KEY",
+            authDomain: "YOUR_AUTH_DOMAIN",
+            projectId: "YOUR_PROJECT_ID",
+            storageBucket: "YOUR_STORAGE_BUCKET",
+            messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+            appId: "YOUR_APP_ID"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        window.firebaseAuth = getAuth(app);
+        window.firebaseDB = getFirestore(app);
+    </script>
+
+    <!-- Custom Scripts -->
+    <script src="js/app.js" defer></script>
+    <script src="js/typing-test.js" defer></script>
+    <script src="js/games.js" defer></script>
+    <script src="js/auth.js" defer></script>
+    <script src="js/profile.js" defer></script>
+
+    <!-- Skip Link Style -->
+    <style>
+        .skip-link {
+            position: absolute;
+            top: -100px;
+            left: 10px;
+            background: #6c5ce7;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 0 0 8px 8px;
+            z-index: 1000;
+            transition: top 0.3s;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+    </style>
+</body>
+</html>

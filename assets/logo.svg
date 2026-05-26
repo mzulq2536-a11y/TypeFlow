@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6c5ce7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a78bfa;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="keyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e8e0ff;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#6c5ce7" flood-opacity="0.4"/>
+    </filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="95" fill="url(#bgGradient)" filter="url(#shadow)"/>
+  
+  <!-- Inner Circle -->
+  <circle cx="100" cy="100" r="75" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+  
+  <!-- Keyboard Keys -->
+  <g filter="url(#glow)">
+    <!-- Key 1 -->
+    <rect x="45" y="55" width="42" height="30" rx="6" fill="url(#keyGradient)" opacity="0.95"/>
+    <text x="66" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#6c5ce7">T</text>
+    
+    <!-- Key 2 -->
+    <rect x="92" y="55" width="42" height="30" rx="6" fill="url(#keyGradient)" opacity="0.85"/>
+    <text x="113" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#6c5ce7">F</text>
+    
+    <!-- Key 3 - Spacebar -->
+    <rect x="45" y="92" width="120" height="22" rx="6" fill="url(#keyGradient)" opacity="0.8"/>
+    
+    <!-- Key 4 -->
+    <rect x="50" y="122" width="28" height="28" rx="5" fill="url(#keyGradient)" opacity="0.7"/>
+    <text x="64" y="141" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#6c5ce7">S</text>
+    
+    <!-- Key 5 -->
+    <rect x="82" y="122" width="28" height="28" rx="5" fill="url(#keyGradient)" opacity="0.75"/>
+    <text x="96" y="141" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#6c5ce7">P</text>
+    
+    <!-- Key 6 -->
+    <rect x="114" y="122" width="28" height="28" rx="5" fill="url(#keyGradient)" opacity="0.65"/>
+    <text x="128" y="141" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#6c5ce7">D</text>
+  </g>
+  
+  <!-- Speed Lines -->
+  <g stroke="rgba(255,255,255,0.3)" stroke-width="2" stroke-linecap="round">
+    <line x1="155" y1="60" x2="180" y2="45"/>
+    <line x1="160" y1="75" x2="188" y2="68"/>
+    <line x1="155" y1="90" x2="180" y2="90"/>
+  </g>
+  
+  <!-- Lightning Bolt -->
+  <polygon points="165,105 158,120 165,118 160,135 175,115 167,117 172,105" fill="#f6e05e" filter="url(#glow)"/>
+  
+</svg>
